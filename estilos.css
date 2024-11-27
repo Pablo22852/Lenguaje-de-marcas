@@ -51,6 +51,6 @@ h3  {
     background-color: pink;
 }
 
-h4 {
+p + h3 {
     background-color: blue;
 }
