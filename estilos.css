@@ -47,7 +47,7 @@ img[alt="segunda"] {
 }
 
 
-h3  {
+h3:has(+p)  {
     background-color: pink;
 }
 
