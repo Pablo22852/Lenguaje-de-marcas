@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Nueva Incidencia - CPIFP Alan Turing</title>
+    <link rel="stylesheet" href="ejercicio1.css">
+</head>
+<body>
+    <!-- Logo del centro -->
+    <div class="logo-centro">
+        <img src="c:\Users\Pablo\Downloads\recursos (1)\recursos\ejercicio1\IAT-LOGOTIPO.jpg" alt="Logo del centro" width="300" height="110">
+    </div>
+
+    <!-- Formulario de nueva incidencia -->
+    <form action="procesarincidencia.php" method="POST" enctype="multipart/form-data" class="formulario-incidencia">
+        <fieldset>
+            <legend>Nueva incidencia</legend>
+            <label for="profesor">Profesor que indica la incidencia:</label>
+            <input type="text" id="profesor" name="profesor" required><br>
+
+            <label for="email">Correo electrónico del profesor:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="departamento">Departamento al que pertenece:</label>
+            <input type="text" id="departamento" name="departamento" required><br>
+
+            <label for="aula">Aula (número):</label>
+            <input type="number" id="aula" name="aula" required><br>
+
+            <label for="dia">Día de la incidencia:</label>
+            <input type="date" id="dia" name="dia" required><br>
+
+            <label for="hora">Hora de la incidencia:</label>
+            <input type="time" id="hora" name="hora" required><br>
+
+            <label for="descripcion">Descripción de la incidencia:</label>
+            <textarea id="descripcion" name="descripcion" rows="4" required></textarea><br>
+
+            <label for="imagen">Subir una imagen de la incidencia (opcional):</label>
+            <input type="file" id="imagen" name="imagen"><br>
+
+            <div class="botones">
+                <button type="submit">Enviar incidencia</button>
+                <button type="reset">Resetear formulario</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <!-- Pie de página con redes sociales -->
+    <footer>
+        <h3>Síguenos</h3>
+        <div class="redes-sociales">
+            <a href="https://facebook.com" target="_blank"><img src="c:\Users\Pablo\Downloads\recursos (1)\recursos\ejercicio1\icons8-facebook-48.png" alt="Facebook" width="48" height="48"></a>
+            <a href="https://twitter.com" target="_blank"><img src="c:\Users\Pablo\Downloads\recursos (1)\recursos\ejercicio1\icons8-twitter-48.png" alt="Twitter" width="48" height="48"></a>
+            <a href="https://instagram.com" target="_blank"><img src="c:\Users\Pablo\Downloads\recursos (1)\recursos\ejercicio1\icons8-instagram-48.png" alt="Instagram" width="48" height="48"></a>
+            <a href="https://youtube.com" target="_blank"><img src="c:\Users\Pablo\Downloads\recursos (1)\recursos\ejercicio1\icons8-youtube-48.png" alt="YouTube" width="48" height="48"></a>
+            <a href="https://turing.edu.es" target="_blank"><img src="c:\Users\Pablo\Downloads\recursos (1)\recursos\ejercicio1\icons8-website-48.png" alt="Página web" width="48" height="48"></a>
+        </div>
+    </footer>
+</body>
+</html>
