@@ -11,21 +11,34 @@ profileImage.addEventListener('mouseout', () => {
 });
 
 
-var nameColorButton = document.getElementById('changeColorName');
-var fullNameH1 = document.getElementById('fullName');
+// var nameColorButton = document.getElementById('changeColorName');
+// var fullNameH1 = document.getElementById('fullName');
 
 
+// nameColorButton.addEventListener('click', () => {
+//     console.warn("click-----");
+//     alert("Ahora el nombre va a cambiar de color");
+//     fullNameH1.style= "color: green; font-style: italic;";
+
+
+
+
+//     // const titleName = document.getElementById('fullName');
+//     // if(titleName.style.color == ''){
+//     //     titleName.style.color = 'red';
+//     // } else{
+//     //     titleName.style.color = '';
+//     // }
+// });
+
+const nameColorButton = document.getElementById("changeColorName");
 nameColorButton.addEventListener('click', () => {
-    console.warn("click-----");
-    alert("Ahora el nombre va a cambiar de color");
-    fullNameH1.style= "color: green; font-style: italic;";
+    const fullNameH1 = document.getElementById('fullName');
+    if (fullNameH1.style.color == '') {
+        // fullNameH1.style.color = 'blue';
+        fullNameH1.style= "color: green; font-style: italic;";
+    } else {
+        fullNameH1.style.color = '';
+    }
 
-
-
-    // const titleName = document.getElementById('fullName');
-    // if(titleName.style.color == ''){
-    //     titleName.style.color = 'red';
-    // } else{
-    //     titleName.style.color = '';
-    // }
 });
