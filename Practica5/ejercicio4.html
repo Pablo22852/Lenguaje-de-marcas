@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Calculadora</h1>
+
+    <!-- Campo para el primer operando -->
+    <label for="operando1">Operando 1:</label>
+    <input type="number" id="operando1" required>
+
+    <!-- Campo para el segundo operando -->
+    <label for="operando2">Operando 2:</label>
+    <input type="number" id="operando2" required>
+
+    <!-- Desplegable para seleccionar el operador -->
+    <label for="operador">Operador:</label>
+    <select id="operador" required>
+        <option value="sumar">Suma</option>
+        <option value="restar">Resta</option>
+        <option value="multiplicar">Multiplicación</option>
+        <option value="dividir">División</option>
+    </select>
+
+    <!-- Botón para calcular -->
+    <button onclick="calcular()">Calcular</button>
+
+    <!-- Campo para mostrar el resultado -->
+    <label for="resultado">Resultado:</label>
+    <input type="text" id="resultado" readonly>
+
+    <script>
+        function calcular() {
+            // Obtener los valores de los campos de entrada
+            const operando1 = parseFloat(document.getElementById('operando1').value);
+            const operando2 = parseFloat(document.getElementById('operando2').value);
+            const operador = document.getElementById('operador').value;
+            let resultado;
+
+            // Realizar la operación según el operador seleccionado
+            switch (operador) {
+                case 'sumar':
+                    resultado = operando1 + operando2;
+                    break;
+                case 'restar':
+                    resultado = operando1 - operando2;
+                    break;
+                case 'multiplicar':
+                    resultado = operando1 * operando2;
+                    break;
+                case 'dividir':
+                    if (operando2 !== 0) {
+                        resultado = operando1 / operando2;
+                    } else {
+                        resultado = 'Error: División por cero';
+                    }
+                    break;
+                default:
+                    resultado = 'Operador no válido';
+            }
+
+            // Mostrar el resultado en el campo de solo lectura
+            document.getElementById('resultado').value = resultado;
+        }
+    </script>
+
+</body>
+</html>

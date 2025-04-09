@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<head>
+    
+    <style>
+        /* Estilo para los contenedores */
+        .contenedor {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px;
+            width: 300px;
+            display: none; /* Ocultar contenedores por defecto */
+        }
+        /* El primer contenedor será visible inicialmente */
+        #contenedor1 {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Primer contenedor -->
+    <div id="contenedor1" class="contenedor">
+        <h2>Contenedor 1</h2>
+        <p>Este es el primer contenedor.</p>
+        <button onclick="mostrarContenedor2()">Ir al Contenedor 2</button>
+    </div>
+
+    <!-- Segundo contenedor -->
+    <div id="contenedor2" class="contenedor">
+        <h2>Contenedor 2</h2>
+        <p>Este es el segundo contenedor.</p>
+        <button onclick="mostrarContenedor1()">Ir al Contenedor 1</button>
+    </div>
+
+    <script>
+        // Función para mostrar el segundo contenedor y ocultar el primero
+        function mostrarContenedor2() {
+            document.getElementById("contenedor1").style.display = "none";
+            document.getElementById("contenedor2").style.display = "block";
+        }
+
+        // Función para mostrar el primer contenedor y ocultar el segundo
+        function mostrarContenedor1() {
+            document.getElementById("contenedor2").style.display = "none";
+            document.getElementById("contenedor1").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>

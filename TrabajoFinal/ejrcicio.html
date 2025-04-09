@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de La Liga</title>
+    <link rel="icon" type="image/png" href="/images/laliga-favicon.png">
+    <link rel="stylesheet" href="ejercicio.css">
+    <link rel="stylesheet" href="ejercicio.css">
+    <link rel="stylesheet" href="ejercicio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="equipos.html">Equipos Históricos</a></li>
+                <li><a href="jugadores.html">Leyendas</a></li>
+                <li><a href="estadisticas.html">Estadísticas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Historia de La Liga Española</h1>
+            <p>Descubre la rica historia del fútbol español desde 1929</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Momentos Históricos</h2>
+            <div class="flex-container">
+                <div class="history-card">
+                    <img src="/images/primera-liga.jpg" alt="Primera Liga 1929">
+                    <h3>Primera Liga (1929)</h3>
+                    <p>El Barcelona se coronó como primer campeón de La Liga</p>
+                </div>
+                <div class="history-card">
+                    <img src="/images/real-madrid-60s.png" alt="Real Madrid años 60">
+                    <h3>Era Dorada (Años 60)</h3>
+                    <p>El dominio del Real Madrid con Di Stéfano</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-section">
+            <h2>Mejores Momentos de La Liga</h2>
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/example-laliga-history" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <section class="lists-section">
+            <div class="ordered-list">
+                <h3>Equipos con más títulos:</h3>
+                <ol>
+                    <li>Real Madrid (35 títulos)</li>
+                    <li>Barcelona (26 títulos)</li>
+                    <li>Atlético de Madrid (11 títulos)</li>
+                    <li>Athletic Club (8 títulos)</li>
+                    <li>Valencia CF (6 títulos)</li>
+                </ol>
+            </div>
+            <div class="unordered-list">
+                <h3>Datos Curiosos:</h3>
+                <ul>
+                    <li>Nunca se ha suspendido, excepto por la Guerra Civil</li>
+                    <li>Telmo Zarra fue el máximo goleador durante 60 años</li>
+                    <li>Solo tres equipos nunca han descendido</li>
+                    <li>La Liga ha tenido 63 equipos diferentes</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="table-section">
+            <h2>Palmarés Histórico</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Década</th>
+                        <th>Equipo Dominante</th>
+                        <th>Títulos en la Década</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1950s</td>
+                        <td>Real Madrid</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>1960s</td>
+                        <td>Real Madrid</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>1970s</td>
+                        <td>Atlético de Madrid</td>
+                        <td>4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="form-section">
+            <h2>Suscríbete a nuestro newsletter</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="18" required>
+                </div>
+                <div class="form-group">
+                    <label>Equipo favorito:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="madrid" name="equipo" value="madrid">
+                        <label for="madrid">Real Madrid</label>
+                        <input type="radio" id="barcelona" name="equipo" value="barcelona">
+                        <label for="barcelona">Barcelona</label>
+                        <input type="radio" id="otro" name="equipo" value="otro">
+                        <label for="otro">Otro</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Intereses:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="historia" name="intereses" value="historia">
+                        <label for="historia">Historia</label>
+                        <input type="checkbox" id="estadisticas" name="intereses" value="estadisticas">
+                        <label for="estadisticas">Estadísticas</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                </div>
+                <button type="submit">Suscribirse</button>
+            </form>
+        </section>
+
+        <section class="map-section">
+            <h2>Sede de La Liga</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6167468905327!2d-3.6885844!3d40.4381307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228e23705d39f%3A0xa8fff6d26e2b1988!2sLaLiga!5e0!3m2!1sen!2ses!4v1234567890"
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </section>
+
+        <section class="media-section">
+            <h2>Himno de La Liga</h2>
+            <audio controls>
+                <source src="/media/himno-laliga.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Historia de La Liga. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

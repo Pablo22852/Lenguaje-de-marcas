@@ -1,0 +1,56 @@
+
+body {
+    font-family: "Courier New", Courier, monospace;
+}
+
+
+#primer-parrafo {
+    background-color: gray;
+}
+
+h1.especial {
+    color: blue;
+}
+
+
+h2, h3, h4 {
+    border: 1px solid orange;
+}
+
+
+img{
+    height: 35px;
+    width: 115px;
+}
+
+
+ul > li {
+    color: red; 
+}
+
+ul ul > li {
+    color: green;
+}
+
+
+p > img {
+    border: 5px solid black;
+}
+
+
+img[alt="primera"] {
+    border: 5px solid rgb(0, 0, 0);
+}
+
+img[alt="segunda"] {
+    border: 5px solid red;
+}
+
+
+p + h3  {
+    background-color: blue;
+}
+
+h3:has(+p){
+    background-color: pink;
+}
