@@ -1,18 +1,32 @@
-<h1>Welcome back background</h1>
+<h1 id="h1">Welcome back background</h1>
 <button id="colorButton">Change Color</button>
+<button id="resetColorButton">Reset to Light Blue</button> 
+<button id="changeHeadingColorButton">Change Heading Color</button> 
 <div id="colorDiv" style="width: 100px; height: 100px; background-color: lightblue;"></div>
 <script>
   const button = document.getElementById("colorButton");
+  const resetColorButton = document.getElementById("resetColorButton"); 
+  const headingColorButton = document.getElementById("changeHeadingColorButton"); 
   const div = document.getElementById("colorDiv");
+  const heading = document.getElementById("h1");
 
   button.addEventListener("click", function () {
     div.style.backgroundColor = "red";
   });
 
-  // TODO: ç
+  // TODO: 
   // 1. Create a second button that changes the backgroundColor back
   // to lightblue or another color of your choice when clicked.
 
   // 2. Create a third button that changes the color of the h1 to blue when the background is red.
 
+  resetColorButton.addEventListener("click", function () {
+    div.style.backgroundColor = "lightblue";
+  });
+
+  headingColorButton.addEventListener("click", function () {
+    if (div.style.backgroundColor === "red") {
+      heading.style.color = "blue";
+    }
+  });
 </script>
