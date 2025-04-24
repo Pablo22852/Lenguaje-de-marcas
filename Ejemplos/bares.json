@@ -1,0 +1,11 @@
+{
+    "bares": {
+        "name": "Paco Pepe",
+        "Price Range": "13€ - 20€",
+        "location": "https://g.co/kgs/pL2Up6M",
+        "Accessibility": "Lunes-Viernes ",
+        "Address": "Calle de Vallehermoso, 79, 28015 Madrid, España",
+        "Type": "Tapas",
+        "Recommended" : "croquetas de jamón"
+    }
+}

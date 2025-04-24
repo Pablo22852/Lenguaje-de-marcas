@@ -1,0 +1,18 @@
+{
+    "city": {
+        "name": "Barcelona",
+        "population": 1620343,
+        "location": "https://goo.gl/maps/4dY1v7Z6X1J2",
+        "description": "Es una ciudad de España.",
+        "weather": "Climas mediterraneos con veranos calurosos e inviernos suaves.",
+        "additionalInformation": {
+            "language": "Catalan y Español",
+            "lugaresfamosos": [
+                "Sagrada Família",
+                "Park Güell",
+                "La Rambla"
+            ]
+            
+        }
+    }
+}
